@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>PhantomJS Demo [yFiles for HTML]</title>
+
+  <link rel="stylesheet" href="../../../../lib/yfiles.css">
+  <link rel="stylesheet" href="../../../resources/style/demo.css">
+
+</head>
+<body class="demo-has-left demo-hide-left-when-small loaded">
+
+<aside class="demo-sidebar demo-left">
+  <h1 class="demo-sidebar-header">Description</h1>
+  <div class="demo-sidebar-content">
+    <p>
+      A basic demo that runs in PhantomJS
+  </div>
+</aside>
+
+<div class="demo-content">
+  <div class="demo-header">
+    <a href="https://www.yworks.com" target="_blank"> <img src="../../../resources/image/ylogo.svg" class="demo-y-logo"> </a> <a
+      href="../../../README.html" target="_blank">yFiles for HTML</a> <span class="demo-title">Script Loading Demo [yFiles for HTML]</span>
+  </div>
+  <div class="demo-toolbar">
+    <button data-command="Layout" title="Layout" class="demo-icon-yIconLayout labeled">Layout</button>
+  </div>
+
+  <div id="graphComponent"></div>
+</div>
+
+<!-- Load license -->
+<script src="../../../resources/license.js"></script>
+
+<!-- Script loading of all modules in correct order -->
+
+<!-- Core Modules-->
+<script src="../../../../lib/umd/yfiles/impl/lang.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/core-lib.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-core.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-binding.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-styles-core.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-styles-default.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-styles-other.js"></script>
+<script src="../../../../lib/umd/yfiles/impl/graph-input.js"></script>
+
+
+<script>
+  window.graphComponent = new yfiles.view.GraphComponent('graphComponent')
+</script>
+
+
+</body>
+</html>
