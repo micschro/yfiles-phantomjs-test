@@ -1,4 +1,4 @@
-# yFiles Testing with Mocha+Puppeteer
+# yFiles Testing with Mocha+PhamtomJS
 
 A small sample showing how to test the yFiles library with [Mocha](https://mochajs.org/) and [Phantomjs](http://phantomjs.org/)
 
